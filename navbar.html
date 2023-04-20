@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bluemercury clone</title>
+    <style>
+
+        p:hover{
+            cursor: pointer;
+        }
+
+        p:active{
+            color:rgb(4, 4, 55);
+            background-color: white;
+        }
+
+        a:active{
+            color:rgb(4, 4, 55);
+            background-color: white;
+        }
+        
+        a{
+            color: white;
+        }
+
+        #parent{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(4, 4, 55);
+            border-radius: 10px;
+            color: white;
+        }
+        #parent > div{
+            margin-left: 10px;
+        }
+
+        #child{
+            display: flex;
+        }
+
+        #child p{
+            padding: 0 30px 0 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Navbar section</h1>
+    <div id="parent">
+        <div>
+            <p>Reebok</p>
+        </div>
+        <div id="child">
+            <a href="./mens.html"><p>Men</p></a>
+            <a href="./mens.html"><p>Women</p></a>
+            <a href="./login.html"><p>Login</p></a>
+            <a href="./login.html"><p>Signup</p></a>
+        </div>
+    </div>
 </body>
 </html>
